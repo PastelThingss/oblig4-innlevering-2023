@@ -139,6 +139,16 @@ footer{
     width: 100%;
 }
 
+#table-content,th,td{
+    border-collapse: collapse;
+    background-color: rgb(210, 204, 204);
+    border: 1px solid black;
+    padding: 0.2rem;
+    text-align: center;
+    margin: auto;
+    word-wrap: break-word;
+}
+
 .flex-Herre-Joggesko{
     display: flex;
     align-items: baseline;
