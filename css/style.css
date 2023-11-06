@@ -66,12 +66,7 @@ footer{
 #grid-container {
     display: grid;
     grid-template-areas: "headerpro" "mainpro" "footerpro";
-    place-items: center;
-    margin:  0 auto;
-    width: 100%;
-    max-width: 1200px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+
 }
 
 .responsive {
@@ -180,7 +175,7 @@ footer{
 
 @media only screen and (min-width: 600px) {
     #grid-container {
-    
+        grid-template-areas: "headerpro headerpro headerpro" "mainpro mainpro mainpro" "footerpro footerpro footerpro";
         
     }
 
