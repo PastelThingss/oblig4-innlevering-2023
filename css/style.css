@@ -1,44 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: calc(1em + 1vw);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+header, main, footer {
+    padding: 1rem;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: headerpro;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#Andefotter {
+    flex-basis: 100%;
+    margin: 1rem auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#house{
+    float: left;
+}
+
+#søkebar{
+    flex-basis: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+main{
+    grid-area: mainpro;
+}
+
+footer{
+    grid-area: footerpro;
+    padding: 0.5rem;
+}
+
+.flex-brands-solid{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "headerpro" "mainpro" "footerpro";
+
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.grey-btn {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #696767;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.flex-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.flex-nav p{
+    margin: 1rem auto;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#navikon{
+    float: left;
+}
+
+#kunde{
+    margin: 1rem auto;
+    flex-basis: 100%; 
+    background-color: #696767;
+    color: white;
+}
+
+.flex-main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.flex-main section, .flex-main img{
+    margin: 1rem auto;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.flex-main img{
+    width: 100%;
+}
+
+#table-content,th,td{
+    border-collapse: collapse;
+    background-color: rgb(210, 204, 204);
+    border: 1px solid black;
+    padding: 0.2rem;
+    text-align: center;
+    margin: auto;
+    word-wrap: break-word;
+}
+
+#gallery{
+    margin: 5px;
 div.gallery {
     border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+#gallery:hover {
   }
-  
+
   div.gallery:hover {
     border: 1px solid #777;
   }
+
+  #gallery img {
   
   div.gallery img {
     width: 100%;
     height: auto;
   }
+
+  #desc {
   
   div.desc {
     padding: 15px;
     text-align: center;
   }
-  
+
+.flex-Herre-Joggesko{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: #696767;
+}
+
+.flex-Herre-Joggesko p{
+    margin: 1rem auto;
+    flex-basis: 100%;
+    color: white;
+}
+
+.flex-btn{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.flex-btn a, .flex-btn-section{
+    flex-basis: 60%;
+    margin: 0.5rem auto;
+    background-color: #696767;
+}
+
+.flex-btn p, .flex-btn-section{
+    flex-basis: 60%;
+    margin: 0.5rem auto;
+    background-color: #696767;
+    color: #fff;
+}
+
+
+@media only screen and (min-width: 600px) {
+    #grid-container {
+        grid-template-areas: "headerpro headerpro headerpro" "mainpro mainpro mainpro" "footerpro footerpro footerpro";
+
+
   * {
     box-sizing: border-box;
   }
-  
+
   .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
   }
-  
+
   @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
     }
+
+    .navbar{
+       display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        top: 50px;
+        padding-top: 50px;
   }
-  
+
   @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
     }
+
+
+}
   }
-  
+
   .clearfix:after {
     content: "";
     display: table;
