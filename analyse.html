@@ -28,6 +28,7 @@
                 <li><a href="forside.html">Forside</a></li>
                 <li><a href="produkter.html">Produkter</a></li>
                 <li><a href="retur&levering.html">Retur & Levering</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
             </ul>   
         </nav>
     </header>
@@ -42,36 +43,55 @@
                 </ul>
             </article>
         </section>
-        <section class="flex-main">
-            <table id="table-content">
-                <tr>
-                    <th>nettsiden før endring</th>
-                    <th colspan="2">nettsiden etter endring</th>
-                </tr>
-                <tr>
-                    <td>forside: Forsiden før endring der var ikke media queries ordentlig lagt til så den og cssen var satt opp på en måt som gjorde at nettsiden ikke ville legge seg i de tre grid kollonen jeg har lagd og holdt seg bare i en kollone</td>
-                    <td colspan="2">forside og her vil det komme teskt så fort je har fikset alle eroror ogfeil på nettisden og da vil det komme opp en forkalring på hva jeg har gjort og endret</td>
-                </tr>
-                <tr>
-                    <td>produktside:</td>
-                    <td colspan="2">produktside</td>
-                </tr>
-                <tr>
-                    <td>retur&levering</td>
-                    <td colspan="2">retur&levering</td>
-                </tr>
-            </table>
-        </section>
-        <section>Dette er sectionen for SEO og UU:
-            <img src="img/forside-for-forbedring-score.png" alt="dette er et bilde av forsiden sin score før forbedring på lighthouse.">
-            <img src="img/produktside-for-forbedring.png" alt="dette er et bilde av produktsiden sin score før forbedrin på lighthouse.">
-            <img src="img/retur-leveringside-for-forbedring.png" alt="dette er et bilde av retur & leverings siden sin score før forbedring på lighthouse.">
+        <section>Dette er sectionen for SEO og UU:husk og skrive en "innledning"! dette er spesfikt for mobil husk å skriv det
+            <img src="img/seo-uu-score-forside.png" alt="dette er et bilde av forsiden sin score før forbedring på lighthouse.">
+            <p>Når jeg kjørte nettisiden igjennom lighthouse så virket lighthouse veldig fornøyd med nettsiden på forsiden så scoret jeg 91 performance, 91 accessibility, 100 best practices
+                ,91 seo. Disse testene ble kjørt for mobil versjon i lighthouse på grunna siden skulle være optimalisert for mobile first også tilpasses desktop etter på så jeg syntes mobile
+            first resulatene var viktigere en desktop versjonen jeg sjekket den under testing men velger å priotere og vise mobil på analysen siden det var det som var viktig.</p>
+            <img src="img/forside-forts4.png" alt="dette er et bilde av forsiden sin score før forbedring på lighthouse.">
+            <p>Lighthouse sa at linkene til tre av mine ikoner på forsiden som er hjerte, handlevogn og huset ikke hadde "Links do not have discernible name" som betyr at det ville vært vanskelig for brukere som bruker 
+                opplesning verktøy ville ha slittet med og finne disse. Så den anbefalte å lage linker som var unike og lette og fokusere på for det ville gjøre navigasjons prossesen til skjerm oppleser
+                bedre en det var før. Lighthosue påpekte også at forside dokumentet ikke hadde en meta forklaring. Og mente forbedringen var å formatere html på en måte som tillot crawlers til å lettere 
+                forstå innholdet på siden.
+            </p>
+            <img src="img/produktside-forst2.png" alt="dette er et bilde av produktsiden sin score før forbedrin på lighthouse.">
+            <p>på produktsiden så scoret jeg 99 performance, 92 accessibility, 100 best practices
+                ,90 seo. Det kom opp samme feil på produktsiden som det gjorde på forsiden med at siden ikke hadde unike eller froksjellige navn nok på ikone på siden. samme feil kom også opp om 
+            min meta ikke hadde noe forklaring. og noe extra som dukket opp på produktsiden var en warning på at tap targets ikke var tilpasset med en passe størrelse. Kommemtaren var 
+        "Tap targets are not sized appropriately". Og jeg fikk også bedksjed om å passe på at siden var mobilvennlig sånn at de skulle slippe og pince og zoome for lese siden.</p>
+            <img src="img/retur-levering-forts1.png" alt="dette er et bilde av retur & leverings siden sin score før forbedring på lighthouse.">
+            <p>på retur og leveringssiden så scoret jeg 100 performance, 91 accessibility, 100 best practices
+                ,91 seo.</p>
+            <img src="img/retur-levering-forts3.png" alt="dette er et bilde av retur & leverings siden sin score før forbedring på lighthouse.">
+            <p>Jeg fikk igjen samme feil som var meta har ikke unike navn, som betyr at nettsiden min er såpass lik at de samme feil dukker opp på alle tre sider. Som da betyr 
+                at når den ene siden har blitt fikset og ikke har den feilen lenger så gjør man bare den endringen på alle tre og vil da ha fikset alle tre. Fikk anbefalt på retur og leveringssiden 
+                og legge til en måte og hoppe over repetift innhold som lar tastatur brukere, bruke nettsiden mer effektivt.
+            </p>
         </section>
        
         <section>her kommer en section for webaim og skal settes opp likt som SEO og UU med skjermbilder og tekslige forklaringer:
             <img src="img/wawe-webaim-for-forbedring.png" alt="dette er bilde av siden på webaim før forbedringer">
+            <p>webaim virket også ganske fornøyd med nettsiden på forside så sa den at jeg hadde 4 errors som jeg syns ikke er så ille med tanke på at på tiden 
+                av testingen så funket ikke media queries min. Webaim sa at en av errors var at jeg manglet en form label, som betyr at en form control ikke hadde en 
+                korrosponderne label/navn. Og proplemet med at form labelen ikke har en assosiert tekstlig label/ merkelapp, er at label jeg har brukt kan hende ikke vises for 
+                skjermleser brukere. De tre andre errors er at jeg har tomme linker, som betyr at linkene ikke har noe text i seg. Og det betyr at funksjonen eller meningen 
+             av linken vil ikke bli visst for brukerne, og dette kan lede til forrvirring for tastatur og skjermleser brukere.</p>
+            <p>Webaim ga syv varsler på forsiden, og en av de var at headingen ikke hadde noe struktur som egentlig bare betyr at siden ikke har noe headings. To av varslene 
+                er at det kan være heading, som betyr at teksten vises til og være en heading men det er ikke noe heading element. Og de fire siste varslene er at siden har overflødige linker 
+             som er ved sdian hverandre går til samme URl. </p>
             <img src="img/webaim-produkter-del1.png" alt="dette er bilde av produktsiden på webaim før forbedringer">
+            <p>på produktsiden så fikk jeg 3 errors som jeg ble overraqsket over siden jeg har mer fyll på den siden og at den hadde mindre errors en forsiden var en 
+                posetiv overraskelse. Og produktsiden var alle tre errors det samme og var samme feil som på forsiden, feilene var tomme linker som ikke hadde noe tekst i seg. 
+                Derimot så fikk jeg tretten varsler på produktsiden, den første varslenen var lik som forsiden med at headingen ikke hadde noe struktur. Og jeg hadde 11 varsler med samme 
+                varsel på og det var det samme som forsiden at det kanskje kan være en heading og at tekst så ut til og være en heading men ikke noe heading element. 
+                og den siste varslet som også var likt som på forsiden var at siden hadde overflødige linker som er ved sdian hverandre og går til samme URL.
+            </p>
             <img src="img/webaim-retur-levering-del1.png" alt="dette er bilde av siden retur på webaim før forbedringer">
+            <p>på retur og leveringsiden så fikk jeg bare 2 errors som gjorde meg veldig fornøyd med at jeg hadde så få erros i koden jeg hadde skrevet. De to errors er det samme som både forside 
+                og produktside som er tomme linker. Og jeg har åtte varsler på retur og leverings siden og de var det samme som på det to forrige sidene. og første varsel er ikke noe 
+                heading struktur og at siden ikke har noe heading. og to av de er kan være en heading og teksten virker til å være en heading men ikke noe heading element. og de fem 
+                siste varslene er at siden overflødige linker og at linkene går til samme URL.
+            </p>
         </section>
         <section>
             <p>jeg må kopiere og lime inn al koden min inn i chat gpt og prompt den til å vurdere koden min utifra et UU og SEO perspektiv. også skal jeg be om spesefikke løsninger også skal jeg da dokumentere resultatene i analysen arket. men jeg skal ikke oppdatere koden min med det chat gpt anbefaler!
@@ -92,14 +112,14 @@
                 <tr>
                     <td>lighthouse resulater</td>
                     <td colspan="2">webaim resultater:
-                        <p>Sier jeg har totalt 8 errorer på min nettside, 4 på forside, 3 på produkter og 2 på retur og levering siden.</p>
+                        Sier jeg har totalt 8 errorer på min nettside, 4 på forside, 3 på produkter og 2 på retur og levering siden.
                     </td>
                     <td colspan="3">chatgpt resultater
                     </td>
                 </tr>
                 <tr>
                     <td>likheter
-                        <p>alle tre kommenterer på struktur og at strukturen mangler vel struktur.</p>
+                        alle tre kommenterer på struktur og at strukturen mangler vel struktur.
                     </td>  
                     <td colspan="2">ulikheter</td>
                 </tr>
