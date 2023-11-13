@@ -40,6 +40,7 @@
     <main class="flex-main">
         <div id="content"> … </div>
         <section >
+            <h1>Analyse av nettstedet</h1>
             <article>
                 <h2>Nøkkelord</h2>
                 <ul>
@@ -49,8 +50,9 @@
                 </ul>
             </article>
         </section>
-        <section>Dette er sectionen for SEO og UU:husk og skrive en "innledning"! dette er spesfikt for mobil husk å skriv det
+        <section>
             <img src="img/seo-uu-score-forside.png" alt="dette er et bilde av forsiden sin score før forbedring på lighthouse.">
+            <h2>Lighthouse</h2>
             <p>Når jeg kjørte nettisiden igjennom lighthouse så virket lighthouse veldig fornøyd med nettsiden på forsiden så scoret jeg 91 performance, 91 accessibility, 100 best practices
                 ,91 seo. Disse testene ble kjørt for mobil versjon i lighthouse på grunna siden skulle være optimalisert for mobile first også tilpasses desktop etter på så jeg syntes mobile
             first resulatene var viktigere en desktop versjonen jeg sjekket den under testing men velger å priotere og vise mobil på analysen siden det var det som var viktig.</p>
@@ -64,7 +66,7 @@
             <p>på produktsiden så scoret jeg 99 performance, 92 accessibility, 100 best practices
                 ,90 seo. Det kom opp samme feil på produktsiden som det gjorde på forsiden med at siden ikke hadde unike eller froksjellige navn nok på ikone på siden. samme feil kom også opp om 
             min meta ikke hadde noe forklaring. og noe extra som dukket opp på produktsiden var en warning på at tap targets ikke var tilpasset med en passe størrelse. Kommemtaren var 
-        "Tap targets are not sized appropriately". Og jeg fikk også bedksjed om å passe på at siden var mobilvennlig sånn at de skulle slippe og pince og zoome for lese siden.</p>
+            "Tap targets are not sized appropriately". Og jeg fikk også bedksjed om å passe på at siden var mobilvennlig sånn at de skulle slippe og pince og zoome for lese siden.</p>
             <img src="img/retur-levering-forts1.png" alt="dette er et bilde av retur & leverings siden sin score før forbedring på lighthouse.">
             <p>på retur og leveringssiden så scoret jeg 100 performance, 91 accessibility, 100 best practices
                 ,91 seo.</p>
@@ -75,7 +77,8 @@
             </p>
         </section>
        
-        <section>her kommer en section for webaim og skal settes opp likt som SEO og UU med skjermbilder og tekslige forklaringer:
+        <section>
+            <h2>WebAim</h2>
             <img src="img/wawe-webaim-for-forbedring.png" alt="dette er bilde av siden på webaim før forbedringer">
             <p>webaim virket også ganske fornøyd med nettsiden på forside så sa den at jeg hadde 4 errors som jeg syns ikke er så ille med tanke på at på tiden 
                 av testingen så funket ikke media queries min. Webaim sa at en av errors var at jeg manglet en form label, som betyr at en form control ikke hadde en 
@@ -84,11 +87,11 @@
              av linken vil ikke bli visst for brukerne, og dette kan lede til forrvirring for tastatur og skjermleser brukere.</p>
             <p>Webaim ga syv advarsler på forsiden, og en av de var at headingen ikke hadde noe struktur som egentlig bare betyr at siden ikke har noe headings. To av advarslene 
                 er at det kan være heading, som betyr at teksten vises til og være en heading men det er ikke noe heading element. Og de fire siste advarslene er at siden har overflødige linker 
-             som er ved sdian hverandre går til samme URl. </p>
+             som er ved sidan hverandre går til samme URl. </p>
             <img src="img/webaim-produkter-del1.png" alt="dette er bilde av produktsiden på webaim før forbedringer">
-            <p>på produktsiden så fikk jeg 3 errors som jeg ble overraqsket over siden jeg har mer fyll på den siden og at den hadde mindre errors en forsiden var en 
+            <p>på produktsiden så fikk jeg tre errors som jeg ble overraqsket over siden jeg har mer fyll på den siden og at den hadde mindre errors en forsiden var en 
                 posetiv overraskelse. Og produktsiden var alle tre errors det samme og var samme feil som på forsiden, feilene var tomme linker som ikke hadde noe tekst i seg. 
-                Derimot så fikk jeg tretten advarsler på produktsiden, den første advarslenen var lik som forsiden med at headingen ikke hadde noe struktur. Og jeg hadde 11 advarsler med samme 
+                Derimot så fikk jeg 13 advarsler på produktsiden, den første advarslenen var lik som forsiden med at headingen ikke hadde noe struktur. Og jeg hadde 11 advarsler med samme 
                 advarsel på og det var det samme som forsiden at det kanskje kan være en heading og at tekst så ut til og være en heading men ikke noe heading element. 
                 og den siste advarslet som også var likt som på forsiden var at siden hadde overflødige linker som er ved sdian hverandre og går til samme URL.
             </p>
@@ -100,12 +103,13 @@
             </p>
         </section>
         <section>
-            <p>jeg må kopiere og lime inn al koden min inn i chat gpt og prompt den til å vurdere koden min utifra et UU og SEO perspektiv. også skal jeg be om spesefikke løsninger også skal jeg da dokumentere resultatene i analysen arket. men jeg skal ikke oppdatere koden min med det chat gpt anbefaler!
+            <h2>Chat GPT</h2>
+            <p>
                 chatgpt ga meg fire punkter til forbedring av SEO, den første var at jeg skulle adde var en menningsfull title tag. Nummer 2 var at jeg skulle adde en meta beskrivelse, og nummer 3 var at jeg skulle adde 
                 en sematic HTML. Og til slutt en heading struktur. For UU så ga chatgpt meg 7 punkter til forbedring av UU, nummer 1 var "Labeling for accessibility". Nummmer to var 
                 nsvigasjon roller for ARIA. Nummer 3 var at jeg husket og adde en alt tag til bildene på siden. Nummer 4 er "Form Accessibility" og nummmer 5 var sikker på at du hadde et 
                 responsivt design. Nummer 6 var at jeg måtte forsikre meg at jeg hadde spesifisert  hvilket språk jeg hadde og bruke språk attribute. Og til slutt nummer 7 der den sa at vis 
-                siden din er tilgjenlig i flere språk så skulle jeg bruke hreflang Attribute.
+                siden din er tilgjenlig i flere språk så skulle jeg bruke href-lang Attribute.
             </p>
             <img src="img/chatgpt-kode-tilbake-mld.png" alt="dette er del 1 av chatgpt sin mening om min kode før forbedring">
             <img src="img/chatgpt-forts2.png" alt="dette er del 2 av chatgpt">
@@ -115,6 +119,7 @@
             <img src="img/forts2-retur-levering-chatgpt-2.png" alt="del 2 av chatgpt sin mening på retur og leveringssiden min">
         </section>
         <section>
+            <h2>Sammenligning</h2>
             <p>jeg skal lage en tabbel på denne siden med tre kolloner, en for chat gpt resultater, en for lighthouse resulater og en fro webaim resultater. I tabellen så skal jeg sammenligne resultatee av de tre. f.eks er det noe lighthouse reager på som chat gpt ikke reagerer på og vise versa?</p>
             <table id="content">
                 <tr>
@@ -148,9 +153,7 @@
             </table>
         </section>
         <section>
-        <p>så skal jeg gjøre forbedrende tiltak for å øke sidens SEO og UU. så skla jeg ta skjermbilder underveis og skrive en liste over tiltak jeg har gjort for å forbedre. Å til slutt så skla jeg kjøre alle sidene utennom analysen arket på nettstedets igjennom de ulike verktøyene som lighthosue og
-             webaim og dokumentere mine resulatter og om jeg fikke bedre score og hvotfro jeg eventuelt fikk bedre score?
-            </p>
+            <h2>Forberedende tiltak</h2>
             <ul>Dette er det jeg har gjort av forbedrene tiltak( få dette til og bli en liten overskrift over listen av forbedrene tiltak)
                 <li>Fikk media queries til og funke med og fjerne motsriende css i css koden og satt opp ferdi g grid aeras i media qureisn så nå funker medai queries og legger seg 
                     i tre kolloner og legger seg riktig forhold til om den er i mobil eller desktop versjon. og Siden det ble fikset så funker gridet mitt sånn det skal også.
@@ -174,9 +177,6 @@
                     rette opp feilene og feilne var tydliged og hadde gode tips og anbefalinger som ga mening og siden begge sider anbeflate samme anbefalinegr g tips så når jeg gjorde det så var endirngenm
                     stor og instans og alt ble da riktig.
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
             </ul>
             <img src="img/forside-etter-forbedring-lighthouse.png" alt="dette er froside scoren etter jeg forbedret på lighthosue">
             <img src="img/produktside-etter-forbedring-lighthouse.png" alt="dette er produktsiden etter forbedring på lightjosue">
@@ -186,16 +186,25 @@
             <img src="img/retur-levering-etter-forbedring webaim.png" alt="detter retur og lervrings dien etter frobedrign på webaim">
         </section>
         <section>
-            del 3 tilgjenlighet:
-            Jeg fikk skjermleser til å funke den leste opp alt på nettsdien i en fin order og en naturlig rekkefølge og leste opp det som sto i aria labels som var tilpasset til ikoner og andre 
-            navigasjons verktøy på nettsiden. Tab funker helt fram til p taggen for motto til sko butikken på forside og retur side mens på produkt side så stopper den rett før bildene begynner. 
-            Jeg valgte å ta aria labels wen aria attributter siden det passet bedre for mine behov og funket vedlig bra for min side og ikoner.
+            <p><strong>Del 3 tilgjenlighet:</strong></p>
+            <p>
+                Jeg fikk skjermleser til å funke den leste opp alt på nettsdien i en fin order og en naturlig rekkefølge og leste opp det som sto i aria labels som var tilpasset til ikoner og andre 
+                navigasjons verktøy på nettsiden. Tab funker helt fram til p taggen for motto til sko butikken på forside og retur side mens på produkt side så stopper den rett før bildene begynner. 
+                Jeg valgte å ta aria labels wen aria attributter siden det passet bedre for mine behov og funket vedlig bra for min side og ikoner.
+            </p>
+
         </section>
         <section>
-            del 4 microdata og rich result
+            <p><strong>Del 4 microdata og rich result:</strong></p>
+            <p>fikk micro data til å funke og jeg brukte microdata indexen til webutvikling til hjelp. For å klarer og gjennom føre sioden og det funekr nå.</p>
         </section>
         <section>
-            del 5 meta og some
+            <p><strong>Del 5 meta og SOME:</strong></p>
+            <p>Fikk lagt in meta tagger og  meta tagger for some som inatram oig sån sånn at ejg har fått på en måte en sånn annosne start på nettsiden for produktet jeg har på nettsdeiden.
+                Jeg brukte tabindex fordi tab funket ikke som det skulle på min nettsdie så da søkt jeg rund tog la inn tabindedx og da funker taben naviagsnkoen på nettsdein så det liker jeg veldig godt og fungerer 
+                veldig bra. Så kan det hende tabindex ikke er 100 prosenten riktig siden jeg hadde valget om ingen tab-navigasjon eller en fungerende tab-naviagasjon, så derfor valgte jeg tab naviagsjon.
+                Det virker ikke som det påvirker nettsiden negativt, og jeg vet at UU gikk fra 100 til 94, men jeg tenker det er helt greit siden jeg nå har en fungererende tab-naviagsjon på min side.
+            </p>
         </section>
     </main>
     <footer class="flex-brands-solid">
